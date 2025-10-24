@@ -1,0 +1,26 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="error-page">
+    <h1>
+    Error:
+    {% if not name and not sport %}
+        No Name And No Sport Provided
+    {% elif not name %}
+        No Name Provided
+    {% else %}
+        No Sport Provided
+    {% endif %}
+    </h1>
+    <img
+        class="error"
+        alt="confused doggo"
+        src="{{ url_for('static', filename='images/goldenretriever.jpg') }}"
+    />
+    <p>
+        Photo by <a href="https://unsplash.com/@richardworks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Richard Burlton</a> on <a href="https://unsplash.com/photos/golden-retriever-puppy-with-blue-collar-HTpmedSyZag?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </p>
+    <button><a href="{{ url_for('index') }}">Back To Home</a></button>
+</div>
+
+
+{% endblock %}

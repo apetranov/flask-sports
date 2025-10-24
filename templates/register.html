@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="register">
+    <h1>
+    Welcome {{ name }} to {{ sport }}{% if sport == "Basketball" %}🏀{% elif sport
+    == "Soccer" %}⚽{% else %}🥏{% endif %}!!!
+    </h1>
+    {% if sport == "Basketball" %}
+        <img
+        alt="basketball doggo"
+        src="{{ url_for('static', filename='images/dogwithbasketball.jpg') }}"
+        />
+        <p>Photo by <a href="https://unsplash.com/@ramone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stainless Images</a> on <a href="https://unsplash.com/photos/depth-photography-of-black-and-white-dog-carry-red-ball-RUgbGfdma6U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+    {% elif sport == "Soccer" %}
+        <img
+        alt="soccer ball doggo"
+        src="{{ url_for('static', filename='images/dogwithsoccerball.jpg') }}"
+        />
+        <p>Photo by <a href="https://unsplash.com/@that_one_ukrainian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrii Smurygin</a> on <a href="https://unsplash.com/photos/a-bulldog-playing-with-a-soccer-ball-in-the-grass-Pw8sCNBcpqw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+    {% else %}
+        <img
+        alt="frisbee doggo"
+        src="{{ url_for('static', filename='images/dogwithfrisbee.jpg') }}"
+        />
+        <p>
+            Photo by <a href="https://unsplash.com/@maeva_vgr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maëva Vigier</a> on <a href="https://unsplash.com/photos/a-dog-sitting-in-a-field-with-a-frisbee-PPtogux0ABM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+    {% endif %}
+
+    <button><a href="{{ url_for('index') }}">Back To Home</a></button>
+</div>
+
+
+{% endblock %}
