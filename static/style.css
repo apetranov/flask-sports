@@ -37,6 +37,9 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 1rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 .register {
@@ -162,6 +165,11 @@ img:hover {
 
 .register button {
   font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.error-page button {
+  white-space: nowrap;
 }
 
 /* Desktops */
@@ -187,6 +195,34 @@ img:hover {
   .register {
     height: 100vh;
   }
+
+  .error-page {
+    padding: 10%;
+  }
+
+  .error-page img {
+    width: 35% !important;
+  }
+
+  .error-page h1 {
+    font-size: 3rem;
+  }
+
+  .error-page p {
+    font-size: 1.5rem !important;
+  }
+
+  .error-page button {
+    width: auto !important; /* or 40%, whichever fits */
+    padding: 0.5rem 2rem !important;
+    font-size: 1.5rem !important;
+    white-space: nowrap !important; /* keeps text on one line */
+  }
+
+  .error-page {
+    height: 100vh;
+  }
+
 }
 
 @media (min-width: 1025px) {
@@ -194,6 +230,12 @@ img:hover {
     font-size: 1.5rem;
   }
   .register button {
+    font-size: 1.5rem;
+  }
+   .error-page {
+    height: 100vh;
+  }
+  .error-page button {
     font-size: 1.5rem;
   }
 }
@@ -219,6 +261,29 @@ img:hover {
     height: 100vh;
   }
   
+  .error-page img {
+    width: 25% !important;
+  }
+
+  .error-page h1 {
+    font-size: 1rem;
+  }
+
+  .error-page p {
+    font-size: 1rem;
+  }
+
+  .error-page button {
+    width: auto !important; /* or 40%, whichever fits */
+    padding: 0.5rem 2rem !important;
+    font-size: 1rem !important;
+    white-space: nowrap !important; /* keeps text on one line */
+  }
+
+  .error-page {
+    height: 100vh;
+  }
+
 }
 
 /* Phones */
@@ -241,4 +306,28 @@ img:hover {
   .register {
     height: 100vh;
   }
+
+  .error-page img {
+    width: 45% !important;
+  }
+
+  .error-page h1 {
+    font-size: 1.2rem;
+  }
+
+  .error-page p {
+    font-size: 1rem;
+  }
+
+  .error-page button {
+    width: auto !important; /* or 40%, whichever fits */
+    padding: 0.5rem 2rem !important;
+    font-size: 1.1rem !important;
+    white-space: nowrap; /* keeps text on one line */
+  }
+
+  .error-page {
+    height: 100vh;
+  }
+
 }
