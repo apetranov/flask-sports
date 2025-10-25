@@ -189,7 +189,7 @@ img:hover {
   .register button {
     width: auto !important; /* or 40%, whichever fits */
     padding: 0.5rem 2rem !important;
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
     white-space: nowrap !important; /* keeps text on one line */
   }
   .register {
