@@ -8,6 +8,10 @@ body {
   background-color: black;
   color: white;
   font-family: Arial black, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .error {
@@ -41,7 +45,12 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 1rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 }
+
+
 
 .register h1 {
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
@@ -65,6 +74,8 @@ img:hover {
     transform: scale(1.08);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }
+
+
 
 .register button {
   width: 20%;
@@ -134,4 +145,98 @@ img:hover {
     0 0 5px rgba(255, 255, 255, 0.6),
     0 0 10px rgba(255, 255, 255, 0.5),
     0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.register img {
+  width: 20%;
+}
+
+.register h1 {
+  font-size: 2rem;
+}
+
+.register {
+  height: 100vh;
+}
+
+.register button {
+  font-size: 0.9rem;
+}
+
+/* Desktops */
+@media (min-width: 1440px) {
+  .register {
+    padding: 10%;
+  }
+  .register img {
+    width: 20% !important;
+  }
+  .register h1 {
+    font-size: 3rem;
+  }
+  .register p {
+    font-size: 1.5rem !important;
+  }
+  .register button {
+    width: auto !important; /* or 40%, whichever fits */
+    padding: 0.5rem 2rem !important;
+    font-size: 1rem !important;
+    white-space: nowrap !important; /* keeps text on one line */
+  }
+  .register {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  .register p {
+    font-size: 1.5rem;
+  }
+  .register button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .register img {
+    width: 25% !important;
+  }
+  .register h1 {
+    font-size: 1rem;
+  }
+  .register p {
+    font-size: 1rem;
+  }
+  .register button {
+    width: auto !important; /* or 40%, whichever fits */
+    padding: 0.5rem 2rem !important;
+    font-size: 1rem !important;
+    white-space: nowrap !important; /* keeps text on one line */
+  }
+  .register {
+    height: 100vh;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .register img {
+    width: 45% !important;
+  }
+  .register h1 {
+    font-size: 1.2rem;
+  }
+  .register p {
+    font-size: 1rem;
+  }
+  .register button {
+    width: auto !important; /* or 40%, whichever fits */
+    padding: 0.5rem 2rem !important;
+    font-size: 1.1rem !important;
+    white-space: nowrap; /* keeps text on one line */
+  }
+  .register {
+    height: 100vh;
+  }
 }
